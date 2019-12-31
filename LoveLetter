@@ -1,0 +1,82 @@
+#!/bin/bash
+
+
+i=0
+str=""
+arry=("\\" "|" "/" "-")
+while [ $i -le 100 ]
+do
+  let index=i%4
+  if  [ $i -le 20 ] 
+    then
+    let color=44
+    let bg=34
+  elif [ $i -le 45 ]
+    then
+    let color=43
+     let bg=33
+  elif [ $i -le 75 ]
+     then
+     let color=41
+     let bg=31
+  else
+     let color=42
+     let bg=32
+
+
+  fi    
+  printf "2020年加载中：\033[${color};${bg}m%-s\033[0m %d %c\r" "$str" "$i" "${arry[$index]}"
+  sleep 0.1
+  let i=i+1
+  str+="#"
+done
+printf "\n\n\n"
+
+echo "央，
+"
+sleep 1
+echo "幸运的是遇到你，
+"
+sleep 1
+echo "感谢你又陪我度过一年，
+"
+sleep 1
+echo "说好带你去吃好多好吃的，
+"
+sleep 1
+echo "去玩哪些好玩的，
+"
+sleep 1
+echo "期待通通实现那一天，
+"
+sleep 1
+echo "在不远的未来这一切都会实现，
+"
+sleep 1
+echo "我现在只想好好珍惜你，
+"
+sleep 1
+echo "没有动人的情话，
+"
+sleep 1
+echo "没有海誓山盟的约定，
+"
+sleep 1
+echo "只有一颗悸动的心等你的触动，
+"
+sleep 1
+echo "2020 新年快乐，
+"
+sleep 1
+echo "新的一年我依旧在你身后，
+"
+sleep 1
+echo "期待你的回眸…
+
+"
+sleep 1
+echo "                      匿名情书
+                      "
+sleep 1
+echo "                      好傻好天真
+"
