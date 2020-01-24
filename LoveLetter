@@ -35,7 +35,7 @@ messages=("央，"
 "新的一年我依旧在你身后，"
 "期待你的回眸…")
 
-for ((i=0;i<16;i++))
+for ((i=0;i<14;i++))
 do
 printf ${messages[$i]}
 printf "\n\n"
